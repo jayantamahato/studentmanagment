@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    margin-top:-100px;
+}
+.stdnav{
+    background-color: #3b3a30;
+    
+    width: 100%;
+}
+.stdnav a{
+    color: #3db166;
+}
+.stdnav a:hover{
+    color: white;
+}
+.content {
+    background-color: #182847;
+    color:#3db166;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    width:90%;
+    background-color: #fffefe53;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content:space-around;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fffefe53;
+    border-radius: 5px;
+    width:400px;
+}
+.basic{
+    color:#182847
+}
+.right{
+    color:#182847;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #fffefe53;
+        border-radius: 5px;
+}
+.pp{
+    border:5px solid #3db166
+}
+.pp img{
+    height:150px;
+    width:150px;
+    margin:5px;
+}
+.set{
+    display: flex;
+    
+}
+.input-group{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.main-footer {
+    background-color: #3b3a30;
+    width: 100%;
+    height: 80px;
+    color: #8d8d8d;
+}
+.main-footer_child {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 30px;
+
+}
+@media screen and (max-width: 480px) {
+.details{
+    width:100%;
+    background-color: #fffefe53;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    }
+    .left{
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        background-color: #fffefe53;
+        border-radius: 5px;
+        width:100%;
+        margin-bottom: 25px;
+    }
+    .basic{
+        color:#182847
+    }
+    .right{
+        color:#182847;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #fffefe53;
+            border-radius: 5px;
+    }
+    .set{
+        display:flex;
+        flex-direction: column;
+    }
+}

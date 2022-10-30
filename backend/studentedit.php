@@ -1,0 +1,40 @@
+<?php
+include'config.php';
+$id=$_GET['id'];
+$fname=$_POST['fname'];
+$lname=$_POST['lname'];
+$father=$_POST['father'];
+$mother=$_POST['mother'];
+$phone=$_POST['con'];
+$email=$_POST['email'];
+$dept=$_POST['subject'];
+$gender=$_POST['gender'];
+$dob=$_POST['dob'];
+$reg=$_POST['regno'];
+$regyear=$_POST['regyear'];
+$stvill=$_POST['villst'];
+$po=$_POST['postoffice'];
+$ps=$_POST['policestation'];
+$dist=$_POST['dist'];
+$state=$_POST['state'];
+$pcollege=$_POST['precollege'];
+$puniversity=$_POST['preuniversity'];
+$pass1=$_POST['pass'];
+$sem=$_POST['semester'];
+$roll=$_POST['roll'];
+$no=$_POST['no'];
+$croll=$_POST['croll'];
+$zip=$_POST['zip'];
+$sql="UPDATE `students` SET `fname`='$fname',`lname`='$lname',`father`='$father',`mother`='$mother',`dob`='$dob',`stvill`='$stvill',`po`='$po',`ps`='$ps',`dist`='$dist',`zip`='$zip',`state`='$state',`pcollege`='$pcollege',`puniversity`='$puniversity',`dept`='$dept',`semester`='$sem',`reg`='$reg',`regyear`='$regyear',`roll`='$roll',`no`='$no',`croll`='$croll',`gender`='$gender',`email`='$email',`phone`='$phone',`password`='$pass1' WHERE `studentid`='$id'";
+$run=mysqli_query($conn,$sql);
+if($run='1')
+{
+    echo "<script> alert('update sucessful')</script>";
+    echo"<script>window.open('../admin/students.php','_self')</script>";
+}
+else
+{
+    echo "<script> alert('Error')</script>";
+    echo"<script>window.open('../admin/studentedit.php','_self')</script>";
+}
+?>

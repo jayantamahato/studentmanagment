@@ -1,0 +1,25 @@
+*{
+margin:0px;
+padding:0px;
+}
+.navbar{
+    top:0px;
+}
+.content{
+ margin-top: 74px;
+background-color: #182847;
+height:87vh;
+}
+.function_button button{
+margin-top: 25px;
+border: 1px solid #3db166;
+height: 50px;
+width: 250px;
+padding: 10px;
+margin:10px;
+text-transform: capitalize;
+background-color: white;
+}
+.logout button{
+    background-color:red;
+}
